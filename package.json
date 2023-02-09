@@ -1,0 +1,26 @@
+{
+  "name": "event-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "optimize-css": "postcss src/styles.css --use autoprefixer cssnano postcss-pxtorem --output dist/styles.prod.css --no-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finan-meharena/event-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finan-meharena/event-website/issues"
+  },
+  "homepage": "https://github.com/finan-meharena/event-website#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-pxtorem": "^6.0.0"
+  }
+}
