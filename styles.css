@@ -37,6 +37,22 @@ body{
     display: flex;
 
 }
+/* -----------key frames  */
+
+@keyframes move-to-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+
+
 
 html{
     --color-grey: #c7cfd3;
@@ -53,6 +69,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: move-to-right 2.5s backwards;
 }
 
 .showcase{
@@ -208,7 +225,6 @@ html{
     /* justify-content: space-between; */
 
 }
-
 
 .legal__item{
     transition: all  0.5s;
