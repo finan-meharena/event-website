@@ -1,0 +1,224 @@
+/* ------------ reset  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    background-color: initial;
+    border: initial;
+    font: inherit;
+}
+
+button{
+    background-color: initial;
+    border: initial;
+}
+
+
+/* -------------base styles  */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: 5px solid rgb(243, 243, 146);
+    background-image: linear-gradient(to bottom right , black,rgb(67, 59, 59));
+    height: 100vh;
+    display: flex;
+
+}
+
+html{
+    --color-grey: #c7cfd3;
+    --color-accent: #d6ff5d;
+}
+
+/* -------------content  */ 
+
+/* ------------showcase-- */
+
+.content{
+    width: 450px;
+    margin: 0 10.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.showcase{
+    flex: 1;
+    background-color: rgb(107, 105, 105);
+}
+
+
+/* ---------------header  */ 
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    /* margin-bottom: 30px; */
+
+
+}
+
+.logo{
+    border-radius: 50%;
+
+}
+
+.all{
+    font-size: 15px;
+    text-transform: lowercase;
+    color: var(--color-grey);
+}
+
+.all__icon{
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+/* ----------main */
+
+.main{
+    margin-bottom: 65px;
+  
+
+}
+
+.heading{
+    font-size: 60px;
+    font-weight: 150;
+    line-height: 0.8;
+    padding-top: 35px;
+}
+
+.heading__emphasis{
+    font-weight: 400;
+
+}
+
+.form{
+    position: relative;
+    margin-top: 25px;
+
+}
+
+.form__input{
+    border-bottom: 1px solid var(--color-accent);
+    font-size: 40px;
+    font-weight: 300;
+    /* padding-bottom: 7px; */
+    padding-left: 65px;
+    color: rgb(184, 239, 108);
+    outline: none;
+    width: 100%;
+
+}
+
+
+/* when in focus state, select palceholder and do this  */
+.form__input:focus::placeholder{
+    color: white;
+}
+
+
+/* select placeholder, and apply this transition steps whenever thes color change */
+.form__input::placeholder{
+    color: var(--color-grey);
+    transition: color 0.4s;
+}
+.form__btn{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+
+}
+
+.form__icon{
+    color: gray;
+    font-size: 38px;
+
+}
+
+.suggestions{
+    margin-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.suggestions__link{
+    color: var(--color-grey);
+    border: 1px solid goldenrod;
+    padding: 5px 13px;
+    width: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+
+.suggestions__link:hover{
+    color: gold;
+    transform: scale(1.05);
+    border-radius: 7px;
+}
+
+.suggestions__number{
+    color: var(--color-accent);
+    border: 1px solid yellow;
+    padding: 5px 13px;
+}
+
+
+/* -----------footer */
+
+.footer{
+   font-size: 15px;
+   color: grey;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 85px;
+
+
+}
+
+.copyright{
+    font-size: inherit;
+
+}
+
+.legal{
+    display: flex;
+    column-gap: 20px;
+    /* justify-content: space-between; */
+
+}
+
+
+.legal__item{
+    transition: all  0.5s;
+}
+.legal__item:hover{
+    color: rgb(241, 119, 119);
+    border-bottom: 1px solid gold;
+
+}
+
+.legal__link{
+
+}
