@@ -1,2 +1,2 @@
-# event-website
+# event-finder-website
 ## Front-End Part
